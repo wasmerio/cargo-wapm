@@ -7,9 +7,9 @@ use anyhow::{Context, Error};
 use cargo_metadata::{Metadata, Package, Target};
 use clap::Parser;
 use serde::Deserialize;
-use wapm_toml::{Manifest, Module};
+use wapm_toml::{Manifest, Module, Wapm};
 
-use crate::{metadata::Features, MetadataTable, Wapm};
+use crate::{metadata::Features, MetadataTable};
 
 /// Publish a crate to the WebAssembly Package Manager.
 #[derive(Debug, Parser)]
